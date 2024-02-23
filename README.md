@@ -1,5 +1,5 @@
 # Agenerative
-TensorRT-LLM Optimized Inference with RAG and Interfaced with Autogen
+RAG-Chatbot connected to Autogen with TensorRT-LLM optimized inference.
 
 ## Installation:
 - Install anaconda 3 on your system.
