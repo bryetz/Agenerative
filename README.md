@@ -25,4 +25,6 @@ python build.py --model_dir <path to mistral model directory> --quant_ckpt_path 
 ```
 
 # How to Run:
+- Add any desired documents for context to the dataset folder in trt-llm-rag-windows for vectorization. 
 - In the terminal, run .\run.bat and input the name of your conda installation directory.
+- The embeddings will be stored in the storage-default directory after being generated, so if you want to add new documents delete this folder and restart the application to generate new embeddings.
