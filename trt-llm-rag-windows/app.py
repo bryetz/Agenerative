@@ -85,7 +85,7 @@ query_engine = faiss_storage.get_query_engine()
 # Setup basic logging
 logging.basicConfig(level=logging.DEBUG)
 
-@app.route('/rag', methods=['POST'])
+@app.route('/retrieve_docs', methods=['POST'])
 def retrieve_documents():
     try:
         data = request.json
@@ -105,7 +105,7 @@ def retrieve_documents():
             app.logger.error(f"Error during document retrieval: {e}")
             return jsonify({"error": "Failed to retrieve documents."}), 500
         
-        return jsonify({"document": str(retrieved_doc)}), 200
+        return jsonify({"documents": str(retrieved_doc)}), 200
     except Exception as e:
         app.logger.error(f"Unexpected error: {e}")
         return jsonify({"error": "Internal Server Error"}), 500
