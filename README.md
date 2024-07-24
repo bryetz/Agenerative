@@ -1,7 +1,5 @@
 [![Demo Video](https://i.ytimg.com/an_webp/lG6T68h8yko/mqdefault_6s.webp?du=3000&sqp=CNjkxLEG&rs=AOn4CLBolG_PUMNJbOYlZXHvgx-IOTdKtw)](https://www.youtube.com/watch?v=lG6T68h8yko)
 
-*Click the image above to watch the demo video.*
-
 # Agenerative
 Agenerative merges advanced technologies to create a RAG-based chatbot capable of code generation and execution optimized by TensorRT-LLM for inference. It uses a REST API compatible with the OpenAI API to integrate seamlessly with AutoGen using any local LLM. It leverages the llama_index and Facebook AI Similarity Search (FAISS) libraries for retrieval-augmented generation (RAG). The RAG component functions within a Flask app which AutoGen agents can use to dynamically query vectorized documents for rich context. AutoGen agents can use user-defined tools written in Python in combination with the RAG tool to access external resources. With AutoGen Studio, it offers a no-code UI, ensuring easy setup and access. Agenerative offers an efficient generative AI solution with no API costs/limits and ensures privacy with local RAG and inference for a secure way to chat with your data.
 
